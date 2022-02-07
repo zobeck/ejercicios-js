@@ -35,3 +35,56 @@ const ejercicio2 = [
     esFamiliar: true,
   },
 ];
+
+/* ====================PRACTICA======================
+let Hola = "Hola mundo (o^▽^o)";
+const nombre = "Zobeck"; 
+let edad = 15;
+let decision = false;
+
+if(edad > 18){
+  console.log( `${nombre} es mayor de edad`);
+}else {
+  console.log( `${nombre} no es mayor de edad`);
+}
+*/
+
+console.log("============Ejercicio 1==============");
+
+
+const compPrimo = (numero) => {
+  for (let num =2; num <= numero/2; num++){
+    if(numero % num ===0){
+      return false;
+    }
+  }
+  return true;
+};
+
+for(let index=0; index < ejercicio1.length; index++){
+  const item = ejercicio1[index];
+
+  const esPrimo = compPrimo(item);
+  if(esPrimo){
+    console.log( item,"es primo" );
+  }
+}
+
+
+//==================Ejercicio 2==========
+
+console.log("============Ejercicio 2==============");
+
+function admision(invitado){
+if(invitado.edad>=18 && invitado.esFamiliar){
+console.log(`${invitado.nombre} puede pasar`);
+}}
+
+ejercicio2.forEach((invitado)=>{
+admision(invitado);
+});
+
+
+//==================Ejercicio 3 ==========
+
+console.log("============Ejercicio 3 ==============");
