@@ -88,3 +88,16 @@ admision(invitado);
 //==================Ejercicio 3 ==========
 
 console.log("============Ejercicio 3 ==============");
+
+function fibonacci(limit){
+  const fib= [0,1];
+  for(let num =2; num < limit; num++){
+    fib[num] = fib[num - 1] + fib [num -2];
+
+  }
+
+  return fib;
+}
+const fibonacciSerie =fibonacci(50);{
+  console.log("Estos son los primeros 50 números de la secuencia de fibonacci:"  + fibonacciSerie)
+}
